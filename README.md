@@ -10,15 +10,17 @@ provisionner "remote-exec" {
 }
 ````
 Pour se connecter en ssh avec terraform on procède comme suit :
+````
 connection {
     type = "ssh"
     user = ""
     private_key = file ("")
     host = self.public.ip
 }
-
+````
 Et pour provisionner en local on utilise 
-
+````
 provisionner "local-exec" {
     command = "votre commande"
 }
+````
