@@ -1,6 +1,6 @@
 # Terraform
 
-Pour permettre terraform de lancer une commande sur la machine distante on utilise ce :
+**Pour permettre terraform de lancer une commande sur la machine distante on utilise ceci** :
 
 ````
 provisionner "remote-exec" {
@@ -9,7 +9,7 @@ provisionner "remote-exec" {
     ]
 }
 ````
-Pour se connecter en ssh avec terraform on procède comme suit :
+**Pour se connecter en ssh avec terraform on procède comme suit** :
 ````
 connection {
     type = "ssh"
@@ -18,7 +18,7 @@ connection {
     host = self.public.ip
 }
 ````
-Et pour provisionner en local on utilise 
+**Et pour provisionner en local on utilise**
 ````
 provisionner "local-exec" {
     command = "votre commande"
