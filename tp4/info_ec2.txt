@@ -1,0 +1,1 @@
+54.88.135.103 ;  echo i-035a30f4dcd9bf00a ; echo us-east-1 
